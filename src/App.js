@@ -8,7 +8,7 @@ function PageHome () {
 
   useEffect(() => {
     console.log(mainRef);
-    mainRef.focus();
+    // mainRef.focus();
   });
 
   return (
@@ -26,7 +26,7 @@ function PageSettings () {
 
   useEffect(() => {
     console.log(mainRef);
-    mainRef.focus();
+    // mainRef.focus();
   });
 
   return (

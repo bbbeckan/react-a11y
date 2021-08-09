@@ -10,8 +10,8 @@ function PageHome () {
     console.log(mainRef);
     setTimeout(() => {
       mainRef?.current?.focus();
-    }, 100);
-  });
+    }, 500);
+  }, [mainRef]);
 
   return (
     <div>
@@ -24,14 +24,14 @@ function PageHome () {
 }
 
 function PageSettings () {
-  let mainRef = null;
+  const mainRef = useRef();
 
   useEffect(() => {
     console.log(mainRef);
     setTimeout(() => {
       mainRef?.current?.focus();
-    }, 100);
-  });
+    }, 500);
+  }, [mainRef]);
 
   return (
     <div ref={mainRef} tabIndex={-1}>

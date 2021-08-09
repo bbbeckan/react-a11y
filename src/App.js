@@ -8,7 +8,9 @@ function PageHome () {
 
   useEffect(() => {
     console.log(mainRef);
-    // mainRef.focus();
+    setTimeout(() => {
+      mainRef.focus();
+    }, 1000);
   });
 
   return (
@@ -26,7 +28,9 @@ function PageSettings () {
 
   useEffect(() => {
     console.log(mainRef);
-    // mainRef.focus();
+    setTimeout(() => {
+      mainRef.focus();
+    }, 1000);
   });
 
   return (

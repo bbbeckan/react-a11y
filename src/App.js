@@ -44,12 +44,12 @@ function App() {
   const history = useHistory();
 
   function onClickHome () {
-    document.getElementById('sr').innerHTML = 'GOING TO HOME';
+    document.getElementById('sr').innerHTML = 'GOING TO HOME AND THE FOCUS THE HEADING';
     history.push('/');
   }
 
   function onClickSettings () {
-    document.getElementById('sr').innerHTML = 'GOING TO SETTINGS';
+    document.getElementById('sr').innerHTML = 'GOING TO SETTINGS AND THE FOCUS THE HEADING';
     history.push('/settings');
   }
 

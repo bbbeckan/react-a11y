@@ -10,7 +10,7 @@ function PageHome () {
     console.log(mainRef);
     setTimeout(() => {
       mainRef?.current?.focus();
-    }, 500);
+    }, 800);
   }, [mainRef]);
 
   return (
@@ -30,7 +30,7 @@ function PageSettings () {
     console.log(mainRef);
     setTimeout(() => {
       mainRef?.current?.focus();
-    }, 500);
+    }, 800);
   }, [mainRef]);
 
   return (
@@ -45,13 +45,11 @@ function App() {
 
   function onClickHome () {
     document.getElementById('sr').innerHTML = 'GOING TO HOME';
-    document.getElementById('sr').focus();
     history.push('/');
   }
 
   function onClickSettings () {
     document.getElementById('sr').innerHTML = 'GOING TO SETTINGS';
-    document.getElementById('sr').focus();
     history.push('/settings');
   }
 
